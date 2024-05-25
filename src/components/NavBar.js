@@ -5,24 +5,9 @@ import './NavBar.css';
 function NavBar() {
   return (
     <nav className="navbar">
-      <NavLink 
-        to="/" 
-        className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
-      >
-        Home
-      </NavLink>
-      <NavLink 
-        to="/directors" 
-        className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
-      >
-        Directors
-      </NavLink>
-      <NavLink 
-        to="/actors" 
-        className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
-      >
-        Actors
-      </NavLink>
+      <NavLink to="/" className="nav-link" >Home</NavLink>
+      <NavLink to="/directors" className="nav-link" >Directors</NavLink>
+      <NavLink to="/actors" className="nav-link" >Actors</NavLink>
     </nav>
   );
 }

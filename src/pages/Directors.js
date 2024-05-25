@@ -12,24 +12,24 @@ function Directors() {
   }, []);
 
   return (
-    <div className="directors-page">
+    <>
       <NavBar />
       <header>
         <h1>Directors Page</h1>
       </header>
       <main>
-        {directors.map((director, id) => (
-          <article key={id}>
+        {directors.map((director, index) => (
+          <article key={index}>
             <h2>{director.name}</h2>
             <ul>
-              {director.movies.map((movie, id) => (
-                <li key={id}>{movie}</li>
+              {director.movies.map((movie, idx) => (
+                <li key={idx}>{movie}</li>
               ))}
             </ul>
           </article>
         ))}
       </main>
-    </div>
+    </>
   );
 }
 

@@ -1,4 +1,3 @@
-// src/components/MovieCard.js
 import { Link } from 'react-router-dom';
 
 function MovieCard({ id, title }) {
